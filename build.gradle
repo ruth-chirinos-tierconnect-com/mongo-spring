@@ -1,0 +1,28 @@
+group 'SpringMongo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.mongodb:mongo-java-driver:3.2.2"
+    compile "org.bitbucket.b_c:jose4j:0.4.1"
+    compile "javax.el:javax.el-api:3.0.0"
+    compile "commons-lang:commons-lang:2.5"
+    compile "de.odysseus.juel:juel-impl:2.2.7"
+
+
+    compile "org.springframework:spring-core:4.2.5.RELEASE"
+//    compile "org.springframework:spring-beans:4.2.5.RELEASE"
+//    compile "org.springframework:spring-expression:4.2.5.RELEASE"
+    compile "org.springframework:spring-context:4.2.5.RELEASE"
+    compile "org.springframework.data:spring-data-mongodb:1.8.4.RELEASE"
+    compile "org.springframework:spring-context-support:4.2.5.RELEASE"
+    compile "cglib:cglib-nodep:3.2.1"
+
+}
